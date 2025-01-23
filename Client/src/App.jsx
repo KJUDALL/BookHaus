@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/NavBar';
 import SearchBooks from './components/SearchBooks';
 import ProfilePage from './components/ProfilePage';
 import Recommendations from './components/Recommendations';
 import LibraryFeed from './components/LibraryFeed';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
