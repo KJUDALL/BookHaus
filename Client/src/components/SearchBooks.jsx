@@ -1,9 +1,10 @@
 // client/src/components/SearchBooks.jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function SearchBooks() {
   const [query, setQuery] = useState('');
   const [books, setBooks] = useState([]);
+  const [wishlist, setWishlist] = useState([]); // Wishlist state
 
   const handleSearch = () => {
     const API_URL = `https://www.googleapis.com/books/v1/volumes?q=${query}`;
@@ -17,6 +18,13 @@ function SearchBooks() {
         }
       })
       .catch((error) => console.error('Error fetching books:', error));
+  };
+
+  const addToWishlist = (book) => {
+    // Avoid duplicate entries in the wishlist
+    if (!wishlist.find((item) => item.id === book.id)) {
+      setWishlist([...wishlist, book]);
+    }
   };
 
   return (
@@ -41,12 +49,23 @@ function SearchBooks() {
                 alt={`${book.volumeInfo.title} cover`}
               />
             )}
-            <p>{book.volumeInfo.description?.substring(0, 100) || 'No description available'}...</p>
-            <a href={book.volumeInfo.infoLink} target="_blank" rel="noopener noreferrer">
-              View More
-            </a>
+            <button onClick={() => addToWishlist(book)}>Add to Wishlist</button>
           </div>
         ))}
+      </div>
+
+      <div className="wishlist">
+        <h2>Your Wishlist</h2>
+        {wishlist.length > 0 ? (
+          wishlist.map((book) => (
+            <div key={book.id} className="wishlist-item">
+              <h4>{book.volumeInfo.title}</h4>
+              <p>By: {book.volumeInfo.authors?.join(', ') || 'Unknown Author'}</p>
+            </div>
+          ))
+        ) : (
+          <p>Your wishlist is empty!</p>
+        )}
       </div>
     </div>
   );
