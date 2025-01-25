@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function LibraryFeed() {
   const [feed, setFeed] = useState([]);
@@ -21,7 +21,7 @@ function LibraryFeed() {
           </div>
         ))
       ) : (
-        <p>Nothing gping on here...for now!</p>
+        <p>Nothing going on here...for now!</p>
       )}
     </div>
   );
