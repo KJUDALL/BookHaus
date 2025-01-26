@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server/server.js",
     "start:dev": "concurrently \"cd server && npm run watch\" \"wait-on tcp:3001 && cd client && npm run dev\"",
-    "server": "cd server && npm start",
+    "server": "cd server && npm start", 
+    "watch": "nodemon --exec ts-node src/server.ts",
     "server:dev": "cd server && npm run dev",
     "install": "cd server && npm i && cd ../client && npm i",
     "client:build": "cd client && npm run build",
@@ -16,7 +17,6 @@
     "render-build": "npm install && npm run build"
   },
   "dependencies": {
-    "concurrently": "^9.1.2",
     "dotenv": "^16.4.7",
     "mongoose": "^8.9.5",
     "react": "^19.0.0",
@@ -27,8 +27,11 @@
     "@types/mongoose": "^5.11.96",
     "@types/node": "^22.10.8",
     "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3",
-    "vite": "^6.0.11"
+    "vite": "^6.0.11",
+    "wait-on": "^8.0.2"
   }
 }
