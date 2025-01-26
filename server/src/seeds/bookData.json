@@ -1,0 +1,37 @@
+[
+	{
+		"title": "The Great Gatsby",
+		"author": "F. Scott Fitzgerald",
+		"description": "Set in the Roaring Twenties, this iconic novel tells of a wealthy and enigmatic man whose unrelenting love for Daisy Buchanan drives him to extraordinary lengths. The book is narrated by Nick Carraway, Gatsby's neighbor, and explores themes of love, ambition, class, and the elusive American Dream, set against a backdrop of glitzy parties and moral decay.",
+		"genre": "Tragedy",
+		"publishedDate": "1925-04-10"
+	},
+	{
+		"title": "The Hobbit, or There and Back Again",
+		"author": "J.R.R Tolkein",
+		"description": "This epic fantasy follows Bilbo Baggins, an anxiety-ridden hobbit who is thrust into a great adventure with a band of dwarves to reclaim their homeland from the dragon Smaug. Throughout the novel, Bilbo encounters trolls, elves, goblins, and the mysterious One Ring, discovering courage and resourcefulness he never knew he had.",
+		"genre": "Adventure",
+		"publishedDate": "1937-09-21"
+	},
+	{
+		"title": "Frankenstein",
+		"author": "Mary Wollstonecraft Shelley",
+		"description": "This dark novel tells the story of Victor Frankenstein, a young scientist who creates a living creature from dead tissue, only to abandon it in horror. The monster, as per expected with this title, is an outcast to society and seeks revenge on his creator, leading to a tragic cycle of destruction. The novel showcases themes of ambition, isolation, and the consequences of attempting to play god.",
+		"genre": "SciFi",
+		"publishedDate": "1925-04-10"
+	},
+	{
+		"title": "Hidden Figures",
+		"author": "Margot Lee Shetterly",
+		"description": "This inspiring true story follows the lives of four African American women mathematicians who worked at NASA during the space race. Forced to overcome racial and gender barriers, their brilliance and perseverance were pivotal in some of the greatest achievements in aerospace known to man. They are forever etched into the history of this great country.",
+		"genre": "Nonfiction",
+		"publishedDate": "2016-09-06"
+	},
+	{
+		"title": "The Three Musketeers",
+		"author": "Alexandre Dumas",
+		"description": "This classic adventure book tells the story of young d'Artagnan as he joins forces with the legendary musketeers Athos, Porthos, and Aramis. Known for their name, d'Artagnan learns to navigate duels and engage in daring escapades in 17th-century France, with the three men. They continue to be known for their motto: 'All for one, and one for all!'",
+		"genre": "Historical Fiction",
+		"publishedDate": "1844-07-01"
+	}
+]

@@ -1,0 +1,37 @@
+[
+	{
+		"id": "20",
+		"email": "joe@test.com",
+		"username": "joe_johnson",
+		"password": "pass123",
+		"createdAt": "2024-10-01T12:00:00Z"
+	},
+	{
+		"id": "21",
+		"email": "alice@test.com",
+		"username": "alice_allison",
+		"password": "pass456",
+		"createdAt": "2024-10-02T14:00:00Z"
+	},
+	{
+		"id": "22",
+		"email": "george@test.com",
+		"username": "george_geovani",
+		"password": "password123",
+		"createdAt": "2024-05-03T16:00:00Z"
+	},
+	{
+		"id": "23",
+		"email": "ben@test.com",
+		"username": "ben_bushman",
+		"password": "password456",
+		"createdAt": "2024-12-03T16:00:00Z"
+	},
+	{
+		"id": "24",
+		"email": "maddy@test.com",
+		"username": "maddy_madison",
+		"password": "pass789",
+		"createdAt": "2024-12-03T16:00:00Z"
+	}
+]
