@@ -24,18 +24,50 @@ jobs:
         with:
           node-version: 16
 
-      # Install dependencies
-      - name: Install dependencies
-        run: npm install
+      # Install dependencies in server
+      - name: Install server dependencies
+        run: |
+          cd server
+          npm install
 
-      # Run linting (Optional: Add ESLint or Prettier)
-      - name: Run lint
-        run: npm run lint
+      # Install dependencies in client
+      - name: Install client dependencies
+        run: |
+          cd client
+          npm install
 
-      # Run tests
-      - name: Run tests
-        run: npm test
+      # Run linting in server (Optional: Add ESLint or Prettier)
+      - name: Run lint in server
+        run: |
+          cd server
+          npm run lint
 
-      # Build the application
-      - name: Build application
-        run: npm run build
+      # Run linting in client (Optional: Add ESLint or Prettier)
+      - name: Run lint in client
+        run: |
+          cd client
+          npm run lint
+
+      # Run tests in server
+      - name: Run tests in server
+        run: |
+          cd server
+          npm test
+
+      # Run tests in client
+      - name: Run tests in client
+        run: |
+          cd client
+          npm test
+
+      # Build the application in server
+      - name: Build server application
+        run: |
+          cd server
+          npm run build
+
+      # Build the application in client
+      - name: Build client application
+        run: |
+          cd client
+          npm run build
