@@ -1,18 +1,18 @@
-import  Post  from '../models/post';
+import  Post  from "./Post";
 
 export const resolvers = {
     Query: {
         posts: async () => await Post.find(),
-        post: async (_, { id }) => await Post.findById(id),
+        post: async (_, { id }: { id: string }) => await Post.findById(id),
     },
 
     Mutation: {
-        createPost: async (__, { user, title, content }) => {
+        createPost: async (__, { user, title, content }: { user: string; title: string; content: string }) => {
             const post = new Post({ user, title, content });
             await post.save();
             return post;
         },
-        updatePost: async (_, { id, title, content }) => {
+        updatePost: async (_, { id, title, content }: { id: string; title: string; content: string }) => {
             return await Post.findByIdAndUpdate(id, { title, content }, { new: true });
         },
         deletePost: async (_: any, { id }: any) => {

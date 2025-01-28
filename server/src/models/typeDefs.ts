@@ -4,17 +4,32 @@ type Post {
     user: ID!
     title: String!
     content: String!
-    }
+}
+
+type User {
+    id: ID!
+    username: String!
+    email: String!
+}
+
+type Comment {
+    id: ID!
+    user: ID!
+    post: ID!
+    content: String!
+}
+
     
-    type Query {
+type Query {
     posts: [Post]
     post(id: ID!): Post
-    }
+}
     
-    type Mutation {
+type Mutation {
     createPost(user: ID!, title: String!, content: String!): Post
     updatePost(id: ID!, title: String!, content: String!): Post
     deletePost(id: ID!): Boolean
-    }
-    `;
+}
+`;
+
 export default typeDefs;
