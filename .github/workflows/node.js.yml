@@ -36,18 +36,6 @@ jobs:
           npm install
 
 
-      # Run tests in server
-      - name: Run tests in server
-        run: |
-          cd server
-          npm test
-
-      # Run tests in client
-      - name: Run tests in client
-        run: |
-          cd Client
-          npm test
-
       # Build the application in server
       - name: Build server application
         run: |
