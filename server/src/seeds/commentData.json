@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "content": "I absolutely love this for you! No better combo than that. Enjoy!",
+        "authorId": 24,
+        "postId": 10,
+        "timestamp": "2025-01-14T12:00:00Z"
+    },
+    {
+        "id": 2,
+        "content": "Woah you've never heard of LOTR? Buckle up, you're in for the ride of a lifetime. So so good.",
+        "authorId": 20,
+        "postId": 11,
+        "timestamp": "2025-01-14T08:00:00Z"
+    },
+    {
+        "id": 3,
+        "content": "Oof sorry to hear that. I also didn't love it, but thought I was the only one. Luckily there aren't anymore in the series lol",
+        "authorId": 22,
+        "postId": 12,
+        "timestamp": "2025-01-22T19:00:00Z"
+    },
+    {
+        "id": 4,
+        "content": "Right?! Couldn't even make it past page 30... kudos to you for finishing the whole thing.",
+        "authorId": 23,
+        "postId": 12,
+        "timestamp": "2025-01-18T19:20:00Z"
+    },
+    {
+        "id": 5,
+        "content": "LOVE this for you! Add a cup of hot coco and you're set.",
+        "authorId": 21,
+        "postId": 14,
+        "timestamp": "2025-01-15T12:00:00Z"
+    }
+]
