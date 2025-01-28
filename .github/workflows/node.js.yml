@@ -32,7 +32,7 @@ jobs:
       # Install dependencies in client
       - name: Install client dependencies
         run: |
-          cd client
+          cd Client
           npm install
 
       # Run linting in server (Optional: Add ESLint or Prettier)
@@ -44,7 +44,7 @@ jobs:
       # Run linting in client (Optional: Add ESLint or Prettier)
       - name: Run lint in client
         run: |
-          cd client
+          cd Client
           npm run lint
 
       # Run tests in server
@@ -56,7 +56,7 @@ jobs:
       # Run tests in client
       - name: Run tests in client
         run: |
-          cd client
+          cd Client
           npm test
 
       # Build the application in server
