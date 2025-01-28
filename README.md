@@ -2,7 +2,9 @@
 
 ## Description
 
+Welcome to BookHaus! You're friendly neighborhood book app to help you connect with fellow book lovers, all while finding you next best read. Our application is built with the user in mind and focuses on simplicity and usability. We know it's an exciting feeling to start a new book that's been highly rated. We also know the thrill of finishing a book, good or bad, and wanting to talk about it with everyone you know. That's where we come into play! We hope you feel at home while using BookHaus and enjoy all its features that help you do what you do best - reading and recommending.
 
+Regarding the technical build out of our app, we've created a full-stack MERN SPA project. A fully functioning frontend with local storage functionality, jsx components, a React framework, and tailwind for CSS to create a modern and responsive webpage. Our backend is stacked with a NoSQL database configuration, via MongoDB. We are utilizing MongoDB Atlas and Render to deploy the live project. We are also leveraging Apollo Server, a GraphQL server, to manage our API. We've also incorporated GitHub Actions to help automate our npm scripts when building the development locally. This helps up speed up our processes and focus on what we do best - coding and creating.  
 
 ## Table of Contents
 
@@ -24,9 +26,15 @@ These screenshots help provide a visual representation of our project and what u
 
 ## Feature List
 
-This application utilizes a wide variety of modern tools and technologies to create a MERN SPA. We understand that technology is ever-changing and developments are occurring at a rapid pace. Although there may be similar applications like our on the market, it is our mission to create unique, creative and niche solutions for our customers.
+This application utilizes a wide variety of modern tools and technologies to create a MERN SPA. We understand that technology is ever-changing and new developments are occurring at a rapid pace. Although there may be similar applications like ours on the market, it is our mission to create unique, creative, and niche solutions for our customers.
 
-To name a few of our unique features....
+To name a few of our unique features...
+Book Shelf feature
+Sign Up feature
+Store user data upon page refresh
+Library Feed
+Book Recommendations
+Book Search
 
 ## Installation
 

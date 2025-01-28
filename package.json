@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/dist/server.js",
-    "start:dev": "concurrently \"cd server && npm run watch\" \"wait-on tcp:3001 && cd client && npm run dev\"",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"wait-on tcp:3001 && cd Client && npm run dev\"",
     "server": "cd server && npm start", 
     "watch": "nodemon --exec ts-node src/server.ts",
     "server:dev": "cd server && npm run dev",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "client:build": "cd client && npm run build",
-    "client:dev": "cd client && npm run dev",
+    "install": "cd server && npm i && cd ../Client && npm i",
+    "client:build": "cd Client && npm run build",
+    "client:dev": "cd Client && npm run dev",
     "seed": "cd server && npm run seed",
-    "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
+    "build": "concurrently \"cd server && npm run build\" \"cd Client && npm run build\"",
     "render-build": "npm install && npm run build"
   },
   "dependencies": {
