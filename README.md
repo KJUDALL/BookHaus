@@ -16,7 +16,7 @@
 
 ## Deployment Link
 
-This app is being deployed publicly via Render. If you would like to simply view the functionality of the app without building it locally, you can do so at this link:
+This app is being deployed publicly via Render. If you would like to simply view the functionality of the app without building it locally, you can do so at this link: https://finalgroupproject.onrender.com
 
 ## Application Snapshot
 
@@ -30,11 +30,12 @@ To name a few of our unique features....
 
 ## Installation
 
-Clone the repository
-Install dependencies (npm install, namely)
-Run development server (npm start or npm run render-build) - TBD
+Clone the repository from GitHub 
+Install dependencies (npm i should do the trick)
+Run development server (npm run build)
 Seed the database (npm seed)
 Start the application on a live port (npm run start)
+Application should auto load in browser on PORT 4000
 
 ## License
 
@@ -44,4 +45,4 @@ Start the application on a live port (npm run start)
 
 ## Questions
 
-If any questions come up in the future, you can contact us directly at finalproject@gmail.com.
+If any questions come up in the future, you can contact us directly at finalproject@gmail.com. Welcome to the BookHaus!
