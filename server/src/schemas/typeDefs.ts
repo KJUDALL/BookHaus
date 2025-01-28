@@ -1,3 +1,4 @@
+// This file contains the GraphQL schema definition for the Post, User, and Comment types, as well as the Query and Mutation types.
 const typeDefs = `
 type Post {
     id: ID!
