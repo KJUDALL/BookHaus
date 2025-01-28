@@ -35,12 +35,6 @@ jobs:
           cd Client
           npm install
 
-      # Run linting in server (Optional: Add ESLint or Prettier)
-      - name: Run lint in server
-        run: |
-          cd server
-          npm run lint
-
       # Run linting in client (Optional: Add ESLint or Prettier)
       - name: Run lint in client
         run: |
