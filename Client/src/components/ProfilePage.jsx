@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { getUserProfile } from '../utils/localstorage.js';          //Modifications here: AJ
 
 function ProfilePage() {
   const [shelves, setShelves] = useState({
@@ -9,11 +10,14 @@ function ProfilePage() {
   });
 
   useEffect(() => {
-    fetch('/api/user/shelves')
-      .then(response => response.json())
-      .then(data => setShelves(data))
-      .catch(error => console.error('Error fetching shelves:', error));
-  }, []);
+    const userProfile = getUserProfile();
+    if (userProfile) {
+      fetch(`/api/user/shelves?userId=${userProfile.id}`)
+        .then(response => response.json())
+        .then(data => setShelves(data))
+        .catch(error => console.error('Error fetching shelves:', error));
+  }
+}, []);                                                                           //Modifications here: AJ
 
   return (
     <div className="profile-page">

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { saveUserProfile } from '../utils/localstorage.js';
 
 function LoginPage() {
   const [email, setEmail] = useState('');

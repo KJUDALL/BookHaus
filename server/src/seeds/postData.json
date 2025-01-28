@@ -1,0 +1,37 @@
+[
+    {
+        "id": "10",
+        "title": "First Post",
+        "content": "Nothing better than books and the beach! Going to be a great weekend reading this - I've heard it's highly rated.",
+        "authorId": 20,
+        "comments": [3]
+    },
+    {
+        "id": "11",
+        "title": "Second Post",
+        "content": "Have you guys heard about something called LOTR? I guess it's supposed to be pretty good. Lots of books and pages to read...wish me luck!",
+        "authorId": 22,
+        "comments": [1,2]
+    },
+    {
+        "id": "12",
+        "title": "Third Post",
+        "content": "Not gonna lie..this book wasn't very good. Don't waste your time - thank u, next.",
+        "authorId": 24,
+        "comments": [1,2,3]
+    },
+    {
+        "id": "13",
+        "title": "Fourth Post",
+        "content": "Currently reading Frankenstein and couldn't be more obsessed! If you're looking for a good scifi, would highly recommend! Specifically the 1818 publication by Mary Shelley.",
+        "authorId": 23,
+        "comments": [4]
+    },
+    {
+        "id": "14",
+        "title": "Fifth Post",
+        "content": "A snow day calls for cozying up on the couch with a good book in hand. These are some of my next few reads - high expectations!",
+        "authorId": 23,
+        "comments": [3,5]
+    }
+]

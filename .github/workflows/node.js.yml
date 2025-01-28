@@ -1,0 +1,49 @@
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # Install dependencies in server
+      - name: Install server dependencies
+        run: |
+          cd server
+          npm install
+
+      # Install dependencies in client
+      - name: Install client dependencies
+        run: |
+          cd Client
+          npm install
+
+
+       # Build the application in server
+      - name: Build server application
+        run: |
+          cd server
+          npm run build
+
+      # Build the application in client
+      - name: Build client application
+        run: |
+          cd client
+          npm run build
