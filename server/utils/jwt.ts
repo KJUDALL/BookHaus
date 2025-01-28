@@ -9,7 +9,11 @@ export const generateToken = (payload: object): string => {
 
 export const verifyToken = (token: string): object | null => {
   try {
-    return jwt.verify(token, SECRET_KEY);
+    const decoded = jwt.verify(token, SECRET_KEY);
+    if (typeof decoded === 'string') {
+      return null;
+    }
+    return decoded;
   } catch (error) {
     return null;
   }
