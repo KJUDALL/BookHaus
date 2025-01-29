@@ -3,6 +3,7 @@
 import express from 'express';
 import User from '../models/User';
 import { generateToken } from '../utils/jwt';
+
 const router = express.Router();
 
 router.post('/register', async (req, res) => {
