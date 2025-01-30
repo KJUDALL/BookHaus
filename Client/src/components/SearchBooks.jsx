@@ -1,5 +1,5 @@
-// client/src/components/SearchBooks.jsx
 import { useState } from 'react';
+import './searchbooks.css'; // Import the updated CSS file
 
 function SearchBooks() {
   const [query, setQuery] = useState('');
@@ -30,13 +30,15 @@ function SearchBooks() {
   return (
     <div className="search-books">
       <h1>Search Books</h1>
-      <input
-        type="text"
-        placeholder="Search for books..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      <button onClick={handleSearch}>Search</button>
+      <div className="search-form">
+        <input
+          type="text"
+          placeholder="Search for books..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <button onClick={handleSearch}>Search</button>
+      </div>
 
       <div className="book-results">
         {books.map((book) => (
@@ -72,3 +74,4 @@ function SearchBooks() {
 }
 
 export default SearchBooks;
+
