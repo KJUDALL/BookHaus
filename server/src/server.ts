@@ -1,7 +1,9 @@
 import express from 'express';
 import mongoose from 'mongoose';
+
 import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
+
 import dotenv from 'dotenv';
 import authRoutes from './routes/auth';
 import protectedRoutes from './routes/protected';

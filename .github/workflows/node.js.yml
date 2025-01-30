@@ -45,5 +45,6 @@ jobs:
       # Build the application in client
       - name: Build client application
         run: |
-          cd client
+
+          cd Client
           npm run build
