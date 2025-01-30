@@ -20,10 +20,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/mydatabase', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/mydatabase');
 
 // Apollo Server Setup
 const server = new ApolloServer({
@@ -40,14 +37,18 @@ const server = new ApolloServer({
 });
 
 // Start Apollo Server and integrate with Express
-await server.start();
-app.use('/graphql', expressMiddleware(server));
+async function startServer() {
+  await server.start();
+  app.use('/graphql', expressMiddleware(server));
 
-// Routes
-app.use('/auth', authRoutes);
-app.use('/api', protectedRoutes);
+  // Routes
+  app.use('/auth', authRoutes);
+  app.use('/api', protectedRoutes);
 
-// Start Express Server
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+  // Start Express Server
+  app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+  });
+}
+
+startServer();
