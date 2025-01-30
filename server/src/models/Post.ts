@@ -1,5 +1,5 @@
 import mongoose, { Document } from "mongoose";
-import { PostSchema } from "../schemas/PostSchema";
+import { PostSchema } from "../schemas/PostSchema.js";
 
 interface IPost extends Document {
 	user: mongoose.Types.ObjectId;

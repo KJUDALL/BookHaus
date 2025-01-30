@@ -1,5 +1,5 @@
 import mongoose, { Document } from "mongoose";
-import { UserSchema } from "../schemas/UserSchema";
+import { UserSchema } from "../schemas/UserSchema.js";
 import bcrypt from 'bcrypt';
 
 interface IUser extends Document {
@@ -14,7 +14,7 @@ interface IUser extends Document {
 UserSchema.pre('save', async function (next) {
     if (!this.isModified('password')) return next();
     const salt = await bcrypt.genSalt(10);
-    this.password = await bcrypt.hash(this.password, salt);
+    this.password = await bcrypt.hash(this.password as string, salt);
     next();
 });
 

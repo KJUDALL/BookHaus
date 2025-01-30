@@ -1,5 +1,5 @@
 import mongoose, { Document } from "mongoose";
-import { BookSchema } from "../schemas/BookSchema";
+import { BookSchema } from "../schemas/BookSchema.js";
 
 // this is the interface for the book which defines the fields and their types
 interface IBook extends Document {

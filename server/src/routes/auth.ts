@@ -1,8 +1,8 @@
 //  Created user authentication routes for user registration and Login to handle JWT generation  -AJ
 // filepath: server/src/routes/auth.ts
 import express from 'express';
-import User from '../models/User';
-import { generateToken } from '../utils/jwt';
+import User from '../models/User.js';
+import { generateToken } from '../utils/jwt.js';
 
 const router = express.Router();
 
