@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './searchbooks.css'; // Import the updated CSS file
+import './SearchBooks.css'; // Import the updated CSS file
 
 function SearchBooks() {
   const [query, setQuery] = useState('');
