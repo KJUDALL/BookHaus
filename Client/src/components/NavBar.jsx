@@ -9,7 +9,7 @@ return (
             <li><Link to="/profile">Your Shelf</Link></li>
             <li><Link to="/recommendations">Recommendations</Link></li>
             <li><Link to="/library-feed">Library Feed</Link></li>
-            <li><Link to="/login-page">Login Page</Link></li>
+            <li><Link to="/login">Login Page</Link></li>
         </ul>
     </nav>
 );
