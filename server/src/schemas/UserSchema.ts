@@ -7,5 +7,4 @@ const UserSchema: Schema = new Schema({
 });
 
 
-
 export { UserSchema };

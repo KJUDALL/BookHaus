@@ -1,19 +1,21 @@
-// Created JWT Utility Functions Here
-import jwt from 'jsonwebtoken';
 
-const SECRET_KEY = process.env.JWT_SECRET || 'your_secret_key';
+// Created JWT Utility Functions Here -AJ
+import jwt, { JwtPayload } from 'jsonwebtoken';
+
+const SECRET_KEY = process.env.JWT_SECRET;
 
 export const generateToken = (payload: object): string => {
   return jwt.sign(payload, SECRET_KEY, { expiresIn: '1h' });
 };
 
-export const verifyToken = (token: string): object | null => {
+export const verifyToken = (token: string): JwtPayload | null => {
   try {
     const decoded = jwt.verify(token, SECRET_KEY);
-    if (typeof decoded === 'string') {
-      return null;
+    if (typeof decoded === 'object' && decoded !== null) {
+      return decoded as JwtPayload;
     }
-    return decoded;
+    return null;
+
   } catch (error) {
     return null;
   }
