@@ -1,7 +1,7 @@
 // JWT MIDDLEWARE CODE THAT PROTECTS ROUTES AND VERIFIES JWT   <-- AJ
 import { Request, Response, NextFunction } from 'express';
 import { JwtPayload } from 'jsonwebtoken';
-import { verifyToken } from '../utils/jwt';  // <-- corrected pathing issue here:
+import { verifyToken } from '../utils/jwt.js';  // <-- corrected pathing issue here:
 
 // Extend the Request interface to include the user property
 declare module 'express-serve-static-core' {
@@ -21,5 +21,4 @@ declare module 'express-serve-static-core' {
       return res.status(401).json({ error: 'Invalid token' });
     }
     req.user = decoded;
-    next();
   };

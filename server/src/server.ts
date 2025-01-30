@@ -5,8 +5,8 @@ import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
 
 import dotenv from 'dotenv';
-import authRoutes from './routes/auth';
-import protectedRoutes from './routes/protected';
+import authRoutes from './routes/auth.js';
+import protectedRoutes from './routes/protected.js';
 import bodyParser from 'body-parser'; // Required for Apollo middleware
 import cors from 'cors';
 

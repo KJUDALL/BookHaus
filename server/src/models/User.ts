@@ -1,5 +1,5 @@
 import mongoose, { Document } from "mongoose";
-import { UserSchema } from "../schemas/UserSchema";
+import { UserSchema } from "../schemas/UserSchema.js";
 import bcrypt from 'bcrypt';
 
 interface IUser extends Document {

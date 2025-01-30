@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/dist/server.js",
 
-    "start:dev": "concurrently \"cd server && npm run watch\" \"wait-on tcp:3001 && cd Client && npm run dev\"",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"wait-on tcp:4000 && cd Client && npm run dev\"",
     "server": "cd server && npm start", 
 
     "watch": "nodemon --exec ts-node src/server.ts",

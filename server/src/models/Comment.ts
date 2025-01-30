@@ -1,5 +1,5 @@
 import mongoose, { Document } from 'mongoose';
-import { CommentSchema } from '../schemas/CommentSchema';
+import { CommentSchema } from '../schemas/CommentSchema.js';
 
 interface IComment extends Document {
     content: string;
