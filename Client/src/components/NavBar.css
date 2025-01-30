@@ -1,0 +1,45 @@
+.navbar {
+    background-color: #f8f1e7; /* Light wood color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.navbar-title {
+    font-family: 'Georgia', serif; /* Elegant font for a library feel */
+    font-size: 2rem;
+    color: #4a3c2a; /* Darker wood color */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #4a3c2a; /* Darker wood color */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-links a:hover {
+    background-color: #d9c6b2; /* Light hover effect */
+    color: #fff; /* Change text color on hover */
+    border-radius: 5px;
+}
+
+/* Optional: Add a background image or texture */
+.navbar {
+    background-image: url(); /* Add a wood texture image */
+    background-size: cover;
+}

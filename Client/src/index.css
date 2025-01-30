@@ -15,11 +15,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: #8b5e3c; /* Brown links */
+  text-decoration: none;
 }
 a:hover {
-  color: #535bf2;
+  color: #a0522d; /* Darker brown on hover */
 }
 
 body {
@@ -28,6 +28,9 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: 'Georgia', serif;
+  background-color: #f5f5dc; /* Beige background */
+  color: #4b3f2f; /* Dark brown text */
 }
 
 h1 {
@@ -36,18 +39,20 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  border-radius: 12px;
+  border: 1px solid #8b5e3c; /* Brown border */
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  font-family: 'Georgia', serif;
+  background-color: #d2b48c; /* Tan background */
+  color: #4b3f2f; /* Dark brown text */
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: background-color 0.25s, border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: #c19a6b; /* Darker tan on hover */
+  border-color: #8b5e3c; /* Darker brown border on hover */
 }
 button:focus,
 button:focus-visible {
@@ -56,13 +61,13 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #4b3f2f; /* Dark brown text */
+    background-color: #f5f5dc; /* Beige background */
   }
   a:hover {
-    color: #747bff;
+    color: #a0522d; /* Darker brown on hover */
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #d2b48c; /* Tan background */
   }
 }
