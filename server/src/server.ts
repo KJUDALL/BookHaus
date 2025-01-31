@@ -2,6 +2,10 @@ import express from "express";
 import mongoose from "mongoose";
 import path from "path";
 
+import { dirname } from "path";
+
+const __dirname = dirname(__filename);
+
 import { ApolloServer } from "@apollo/server";
 import { expressMiddleware } from "@apollo/server/express4";
 
